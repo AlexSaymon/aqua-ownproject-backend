@@ -1,4 +1,4 @@
-export const serializateUser = (user) => ({
+export const serializeUser = (user) => ({
   name: user.name,
   email: user.email,
   createdAt: user.createdAt,

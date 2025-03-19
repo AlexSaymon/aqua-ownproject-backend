@@ -9,6 +9,8 @@ import { router } from './routes/index.js';
 import cookieParser from 'cookie-parser';
 import { UPLOADS_DIR_PATH } from './constants/path.js';
 import { swaggerDocs } from './middlewares/swaggerDocs.js';
+import { notFoundHandler } from './middlewares/notFoundHandler.js';
+import { errorHandlerMiddleware } from './middlewares/errorHandler.js';
 
 export const setupServer = () => {
   const app = express();
@@ -31,9 +33,9 @@ export const setupServer = () => {
 
   app.use(router);
 
-  // app.use(notFoundHandler);
+  app.use(notFoundHandler);
 
-  // app.use(errorHandlerMiddleware);
+  app.use(errorHandlerMiddleware);
 
   const PORT = getEnv(ENV_VARS.PORT, 3000);
 
