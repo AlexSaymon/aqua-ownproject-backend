@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
-import { ENV_VARS } from '../constants/env';
-import { getEnv } from './getEnv';
+import { ENV_VARS } from '../constants/env.js';
+import { getEnv } from './getEnv.js';
 import createHttpError from 'http-errors';
 
 const transport = nodemailer.createTransport({
