@@ -3,8 +3,6 @@ import pino from 'pino-http';
 import cors from 'cors';
 import { ENV_VARS } from './constants/env.js';
 import { getEnv } from './utils/getEnv.js';
-// import { errorHandlerMiddleware } from './middlewares/errorHandler.js';
-// import { notFoundHandler } from './middlewares/notFoundHandler.js';
 import { router } from './routes/index.js';
 import cookieParser from 'cookie-parser';
 import { UPLOADS_DIR_PATH } from './constants/path.js';

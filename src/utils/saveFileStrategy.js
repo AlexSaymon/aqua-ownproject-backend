@@ -1,6 +1,6 @@
-import { ENV_VARS } from '../constants/env';
-import { getEnv } from './getEnv';
-import { saveFileToCloudinary } from './saveFileToCloudinary';
+import { ENV_VARS } from '../constants/env.js';
+import { getEnv } from './getEnv.js';
+import { saveFileToCloudinary } from './saveFileToCloudinary.js';
 
 export const saveFile = async (file) => {
   const strategy = getEnv(ENV_VARS.SAVE_FILE_STRATEGY);

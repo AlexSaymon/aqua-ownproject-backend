@@ -1,6 +1,6 @@
 import cloudinary from 'cloudinary';
-import { getEnv } from './getEnv';
-import { ENV_VARS } from '../constants/env';
+import { getEnv } from './getEnv.js';
+import { ENV_VARS } from '../constants/env.js';
 import fs from 'node:fs/promises';
 import createHttpError from 'http-errors';
 
